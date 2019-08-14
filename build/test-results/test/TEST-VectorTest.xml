@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="VectorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-08-13T11:42:36" hostname="RENTLAPT0095" time="0.03">
+<testsuite name="VectorTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2019-08-14T04:21:45" hostname="RENTLAPT0095" time="0.023">
   <properties/>
-  <testcase name="roverCanMoveForwardFromNorth" classname="VectorTest" time="0.011"/>
-  <testcase name="roverCanMoveForwardFromSouth" classname="VectorTest" time="0.003"/>
-  <testcase name="roverCanMoveForwardFromEast" classname="VectorTest" time="0.002"/>
-  <testcase name="roverCanMoveForwardFromWest" classname="VectorTest" time="0.003"/>
-  <testcase name="vectorcanrotaterightfromeast" classname="VectorTest" time="0.001"/>
+  <testcase name="roverCanMoveForwardFromNorth" classname="VectorTest" time="0.009"/>
+  <testcase name="roverCanMoveForwardFromSouth" classname="VectorTest" time="0.002"/>
+  <testcase name="roverCanMoveForwardFromEast" classname="VectorTest" time="0.003"/>
+  <testcase name="roverCanMoveForwardFromWest" classname="VectorTest" time="0.002"/>
+  <testcase name="vectorcanrotaterightfromeast" classname="VectorTest" time="0.0"/>
   <testcase name="vectorcanrotaterightfromwest" classname="VectorTest" time="0.001"/>
   <testcase name="roverCanMoveMultipleTimesFromNorth" classname="VectorTest" time="0.001"/>
   <testcase name="roverCanMoveMultipleTimesFromSouth" classname="VectorTest" time="0.0"/>
   <testcase name="vectorcanrotateleftfromeast" classname="VectorTest" time="0.0"/>
-  <testcase name="vectorcanrotateleftfromwest" classname="VectorTest" time="0.0"/>
+  <testcase name="vectorcanrotateleftfromwest" classname="VectorTest" time="0.001"/>
   <testcase name="vectorcanrotaterightfromnorth" classname="VectorTest" time="0.0"/>
   <testcase name="vectorcanrotaterightfromsouth" classname="VectorTest" time="0.0"/>
-  <testcase name="roverCanMoveMultipleTimesFromEast" classname="VectorTest" time="0.0"/>
+  <testcase name="roverCanMoveMultipleTimesFromEast" classname="VectorTest" time="0.001"/>
   <testcase name="roverCanMoveMultipleTimesFromWest" classname="VectorTest" time="0.0"/>
   <testcase name="roverCanMoveAndRotateLeft" classname="VectorTest" time="0.0"/>
   <testcase name="vectorInitializeWithGivenDetails" classname="VectorTest" time="0.001"/>

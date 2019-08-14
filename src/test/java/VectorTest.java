@@ -204,6 +204,5 @@ public class VectorTest
         assertEquals(10, newvector.y);
         assert(newvector.direction instanceof North);
        // assertEquals('S',newvector.direction);
-
     }
 }
