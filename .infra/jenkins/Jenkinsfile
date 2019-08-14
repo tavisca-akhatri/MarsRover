@@ -4,6 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh script: '''
+                    chmod +x gradlew
                     echo "I am in build step"
                     ./gradlew build
                 ''',
