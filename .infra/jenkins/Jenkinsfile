@@ -33,9 +33,9 @@ pipeline {
         stage('Build DockerImage')
         {
             steps {
-                docker build . ".infra/docker "
                 sh script: '''
                     echo "I am Building DockerImage ="
+                     docker build jenkinsci/blueocean .infra/docker/
                 ''',
             label: "Building Docker Image"
 
