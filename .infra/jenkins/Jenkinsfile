@@ -35,7 +35,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage ="
-                     docker build jenkinsci/blueocean
+                     docker build jenkinsci/blueocean:latest
                 ''',
             label: "Building Docker Image"
 
