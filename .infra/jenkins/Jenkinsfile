@@ -33,6 +33,7 @@ pipeline {
         stage('Build DockerImage')
         {
             steps {
+
                 sh script: '''
                     echo "I am Building DockerImage ="
                 ''',

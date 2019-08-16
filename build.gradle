@@ -20,3 +20,11 @@ test {
         events "passed", "skipped", "failed"
     }
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'MarsRover'
+        )
+    }
+}

@@ -20,7 +20,7 @@ public class MarsRover
         Coordinates coordinates = new Coordinates(3,3,'E');
         String commands = "MMRMMRMRRM";
 
-        System.out.println("newPosition..." + coordinates.x + " " + coordinates.y + " " + coordinates.dir);
+        System.out.println("currentPosition..." + coordinates.x + " " + coordinates.y + " " + coordinates.dir);
         for (char command : commands.toCharArray()) {
             rove(command,coordinates);
         }
@@ -36,13 +36,13 @@ public class MarsRover
         {
             switch (command) {
                 case 'L':
-                    coordinates.dir = 'W';
+                    coordinates.dir = 'N';
                     break;
                 case 'R':
-                   coordinates.dir = 'E';
+                   coordinates.dir = 'S';
                     break;
                 case 'M':
-                    coordinates.y++;
+                    coordinates.x++;
                     break;
             }
 
@@ -51,13 +51,13 @@ public class MarsRover
         {
             switch (command) {
                 case 'L':
-                    coordinates.dir = 'N';
+                    coordinates.dir = 'W';
                     break;
                 case 'R':
-                    coordinates.dir = 'S';
+                    coordinates.dir = 'E';
                     break;
                 case 'M':
-                    coordinates.x++;
+                    coordinates.y++;
                     break;
             }
 
