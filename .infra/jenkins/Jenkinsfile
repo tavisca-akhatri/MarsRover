@@ -33,11 +33,12 @@ pipeline {
         stage('Build DockerImage')
         {
             steps {
-
+                docker build -t "jenkinsci/blueocean:latest" .infra/docker/
                 sh script: '''
                     echo "I am Building DockerImage ="
                 ''',
             label: "Building Docker Image"
+
             }
         }
         stage('Publish DockerImage')
