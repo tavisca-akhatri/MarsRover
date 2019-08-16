@@ -35,7 +35,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Building DockerImage ="
-                     docker build jenkinsci/blueocean:latest
+                    "docker build -t myfirstrepository/MarsRover ."
                 ''',
             label: "Building Docker Image"
 
@@ -46,6 +46,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Pubishing DockerImage ="
+                    "docker push myfirstrepository/MarsRover"
                 ''',
             label: "Publishing Docker Image"
             }
