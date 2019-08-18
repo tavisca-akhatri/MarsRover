@@ -6,7 +6,7 @@ pipeline {
                 sh script: '''
                     chmod +x gradlew
                     echo "I am in build step"
-                    ./gradlew build -x test
+                    ./gradlew build
                 ''',
             label: "Building Project"
             }
@@ -26,6 +26,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am in Sonarqube scan"
+
                 ''',
             label: "Running Sonarqube Scan"
             }
