@@ -47,7 +47,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Pubishing DockerImage ="
-                    "docker push myfirstrepository/MarsRover"
+                    docker push myfirstrepository/MarsRover
                 ''',
             label: "Publishing Docker Image"
             }
