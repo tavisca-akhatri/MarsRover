@@ -36,7 +36,7 @@ pipeline {
             steps {
                 sh script: '''=
                     echo "I am Building DockerImage ="
-                    docker build -t myfirstrepository/MarsRover  .infra/docker/
+                    docker build -t myfirstrepository/MarsRover .
                 ''',
             label: "Building Docker Image"
 
