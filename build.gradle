@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "2.7"
 }
 
 group 'com.tavisca.workshop'
@@ -13,4 +14,18 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'MarsRover'
+        )
+    }
 }
