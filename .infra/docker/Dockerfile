@@ -1,4 +1,6 @@
 FROM java:8
-COPY ./build/libs /var/www/java
-WORKDIR /var/www/java                 
+COPY . /var/www/java
+WORKDIR /var/www/java
+RUN ./gradlew build
+WORKDIR ./build/libs
 CMD ["java","-jar" "MarsRover-1.0-SNAPSHOTS.jar"]
