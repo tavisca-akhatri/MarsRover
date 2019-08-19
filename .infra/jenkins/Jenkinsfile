@@ -37,8 +37,6 @@ pipeline {
                 sh script: '''
                     echo "I am Building DockerImage ="
                    docker build -t 'marsrover' -f ./.infra/docker/Dockerfile .
-                   pwd
-                   dir
                  ''',
             label: "Building Docker Image"
 
