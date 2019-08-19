@@ -49,6 +49,7 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Pubishing DockerImage ="
+                    docker login -u akshit20 -p Cristiano1!
                     docker tag marsrover:latest akshit20/myfirstrepository:latest
                     docker push akshit20/myfirstrepository
                 ''',
