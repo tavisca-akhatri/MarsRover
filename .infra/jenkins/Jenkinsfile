@@ -49,8 +49,8 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Pubishing DockerImage ="
-                    docker tag marsrover:latest akshit20/marsrover:latest
-                    docker push akshit20/marsrover
+                    docker tag marsrover:latest akshit20/myfirstrepository:latest
+                    docker push akshit20/myfirstrepository
                 ''',
             label: "Publishing Docker Image"
             }
