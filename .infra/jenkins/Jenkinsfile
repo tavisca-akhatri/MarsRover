@@ -49,7 +49,6 @@ pipeline {
             steps {
                 sh script: '''
                     echo "I am Pubishing DockerImage ="
-                    wipty cat ~/my_password.txt | docker login --username akshit20 --password-stdin
                     docker tag marsrover:latest akshit20/marsrover:latest
                     docker push akshit20/marsrover
                 ''',
