@@ -34,7 +34,7 @@ pipeline {
         stage('Build DockerImage')
         {
             steps {
-                sh script: '''=
+                sh script: '''
                     echo "I am Building DockerImage ="
                     docker build . -t myfirstrepository/Marsrover
                 ''',
